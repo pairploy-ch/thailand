@@ -31,11 +31,11 @@ export function AboutSection() {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                <img src="/modern-office-meeting-room.png" alt="Office meeting" className="w-full h-full object-cover" />
+                <img src="/about/ab-1.jpg" alt="Office meeting" className="w-full h-full object-cover" />
               </div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img
-                  src="/business-professional-working.jpg"
+                  src="/about/ab-2.jpg"
                   alt="Professional working"
                   className="w-full h-full object-cover"
                 />
@@ -43,10 +43,10 @@ export function AboutSection() {
             </div>
             <div className="space-y-4 pt-8">
               <div className="aspect-square rounded-lg overflow-hidden">
-                <img src="/business-team-collaboration.png" alt="Team collaboration" className="w-full h-full object-cover" />
+                <img src="/about/ab-3.jpg" alt="Team collaboration" className="w-full h-full object-cover" />
               </div>
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                <img src="/professional-woman-office.jpg" alt="Professional woman" className="w-full h-full object-cover" />
+                <img src="/about/ab-4.jpg" alt="Professional woman" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
