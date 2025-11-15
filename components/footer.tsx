@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { ChevronUp } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { ChevronUp } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer className="bg-gray-50 py-16">
@@ -16,9 +16,14 @@ export function Footer() {
           {/* Logo and Contact Info */}
           <div>
             <div className="mb-8">
-              <Image src="/logo-tp.png" alt="Real Homes" width={100} height={60} />
+              <Image
+                src="/logo-tp.png"
+                alt="Real Homes"
+                width={100}
+                height={60}
+              />
             </div>
-            
+
             <div className="space-y-4 text-gray-600">
               {/* <div className="flex items-start gap-3">
                 <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,17 +32,53 @@ export function Footer() {
                 </svg>
                 <span>1889 NW 79st St, Asheville, NC 98726</span>
               </div> */}
-              
+
               <div className="flex items-center gap-3">
-                <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                <svg
+                  className="w-5 h-5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
                 </svg>
-                <span>+66 6xx xxxx</span>
+                <span>+66 98 96339 63 / Thai Speaking </span>
               </div>
-              
               <div className="flex items-center gap-3">
-                <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <svg
+                  className="w-5 h-5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span>+66 98 624 1805 / English Speaking </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <svg
+                  className="w-5 h-5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
                 </svg>
                 <span>Thailandprestige6@gmail.com</span>
               </div>
@@ -49,7 +90,10 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/properties" className="text-gray-600 hover:text-accent transition-colors">
+                <Link
+                  href="/properties"
+                  className="text-gray-600 hover:text-accent transition-colors"
+                >
                   Properties Listing
                 </Link>
               </li>
@@ -71,11 +115,13 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-6">Other Pages</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/blogs" className="text-gray-600 hover:text-accent transition-colors">
+                <Link
+                  href="/blogs"
+                  className="text-gray-600 hover:text-accent transition-colors"
+                >
                   Blogs
                 </Link>
               </li>
-       
             </ul>
           </div>
 
@@ -85,7 +131,12 @@ export function Footer() {
             <p className="text-gray-600 mb-6">
               Get expert consultation regarding you Real Estate needs.
             </p>
-            <button className="px-6 py-2 border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors rounded">
+            <button
+              onClick={() =>
+                (window.location.href = "mailto:Thailandprestige6@gmail.com")
+              }
+              className="px-6 py-2 border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors rounded"
+            >
               Contact
             </button>
 
@@ -93,9 +144,16 @@ export function Footer() {
             <div className="mt-8">
               <h4 className="font-bold mb-4">Connect With Us</h4>
               <div className="flex gap-3">
-                <a href="https://www.facebook.com/thattheWAY?mibextid=wwXIfr&rdid=9uffb0ThHt8MFV7A&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Bf4D9J9AR%2F%3Fmibextid%3DwwXIfr#" className="w-10 h-10 rounded-full bg-gray-200 hover:bg-accent hover:text-white flex items-center justify-center transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                <a
+                  href="https://www.facebook.com/thattheWAY?mibextid=wwXIfr&rdid=9uffb0ThHt8MFV7A&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Bf4D9J9AR%2F%3Fmibextid%3DwwXIfr#"
+                  className="w-10 h-10 rounded-full bg-gray-200 hover:bg-accent hover:text-white flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
                 </a>
                 {/* <a href="#" className="w-10 h-10 rounded-full bg-gray-200 hover:bg-accent hover:text-white flex items-center justify-center transition-colors">
@@ -134,5 +192,5 @@ export function Footer() {
         <ChevronUp className="w-6 h-6" />
       </button>
     </footer>
-  )
+  );
 }

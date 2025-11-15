@@ -45,8 +45,8 @@ export function ContactCtaSection() {
 
           {/* Right Column - Form */}
           <div className="text-white">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-balance">Are you looking for a dream home?</h2>
-            <p className="text-lg mb-8 text-white/90">We can help you relize your dream of a new home</p>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-balance">Are you looking for a dream property?</h2>
+            <p className="text-lg mb-8 text-white/90">We can help you relize your dream of a new property</p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">

@@ -13,9 +13,9 @@ const services = [
   },
   {
     icon: Building2,
-    title: "Home Buying",
+    title: "Property Buying",
     description:
-      "Planning to buy home? We offer a range of assistance to make the home buying process smoother and more convenient for the buyer.",
+      "Planning to buy property? We offer a range of assistance to make the home buying process smoother and more convenient for the buyer.",
     color: "text-orange-500",
   },
   {
@@ -34,7 +34,7 @@ const services = [
   },
   {
     icon: Globe,
-    title: "Home Selling",
+    title: "Property Selling",
     description:
       "Whether you are an individual homeowner, real estate investor, we assist in marketing, selling, and closing the sale of a property.",
     color: "text-purple-500",

@@ -6,18 +6,24 @@ import { Check, Phone } from "lucide-react"
 import Image from "next/image"
 
 const agents = [
-
+      {
+    name: "Sabrina Sipim Piwatthongchai",
+    image: "/agent/ag-5.jpg",
+    position: 'Founder & Managing Director',
+    text: 'Thai–Australian real estate professional with a strong background in property management, sales, and international investment. Based between Melbourne and Bangkok, she founded Thailand Prestige with a vision to connect Thai and international investors through trustworthy real estate insights and exceptional service. With years of experience in Australia’s property market and ongoing studies in MBA at RMIT University, Sipim combines global perspective with local expertise — helping clients make confident and strategic property decisions in both Thailand and Australia.',
+    phone: "987-654-3210",
+  },
   {
     name: "Passasi Seepangmon",
-    image: "/agent/ag-2.jpg",
+    image: "/agent/ag-2.jpg", 
     position: 'Media and Marketing Specialist',
     text: 'Thailand Prestige proudly welcomes Ms. Passasi Seepengmon, an exceptional talent whose expertise in marketing and corporate communications extends across the regional level. Known for her creativity, strategic mindset, and leadership potential, Passasi represents the new generation of professionals who combine passion with precision.',
     phone: "987-654-3210",
   },
     {
-    name: "Name",
+    name: "Khemcharantorn Wannasrikongsin",
     image: "/agent/ag-3.jpg",
-    position: 'Reat Estate Agent Specialist',
+    position: 'Interior Architec',
     text: 'Top is a passionate Interior Architect with a strong foundation from HMC, Rotterdam – The Netherlands.With his creativity and hands-on experience, Top helps clients enhance the value of their property through designs that perfectly match their lifestyle and vision.',
     phone: "987-654-3210",
   },
@@ -28,18 +34,12 @@ const agents = [
     text: 'Winny Lim was born and raised in Bangkok and pursued her studies in New Zealand. After many years of experience with international real estate firms, Winny decided to join the team at Thailand Prestige to continue her passion for real estate. She specializes in property rentals in Bangkok and the sale of prime residential properties across Bangkok, Chonburi, and Pattaya. With her strong market knowledge and personalized service, Winny is committed to helping clients find their perfect home or investment property.',
     phone: "987-654-3210",
   },
-      {
-    name: "Sabrina Sipim Piwatthongchai",
-    image: "/agent/ag-5.jpg",
-    position: 'Reat Estate Agent Specialist',
-    text: 'Thai–Australian real estate professional with a strong background in property management, sales, and international investment. Based between Melbourne and Bangkok, she founded Thailand Prestige with a vision to connect Thai and international investors through trustworthy real estate insights and exceptional service. With years of experience in Australia’s property market and ongoing studies in MBA at RMIT University, Sipim combines global perspective with local expertise — helping clients make confident and strategic property decisions in both Thailand and Australia.',
-    phone: "987-654-3210",
-  },
+
     {
     name: "Kaewmanee Termrattanasuwan",
     image: "/agent/ag-1.jpg",
-    position: 'Reat Estate Agent Specialist',
-    text: 'Every problem is an opportunity. The more we solve, the more our value grows—driven by capability and sincerity.',
+    position: 'Real Estate Agent Specialist',
+    text: 'Every challenge is an opportunity—each solution elevates value, capability, and trust. Kaewmanee is a distinguished real estate professional based in Northern Thailand, expertly connecting premium Thai properties with discerning Myanmar investors seeking secure, high-quality investment opportunities. With a commitment to sincerity, discretion, and exceptional service, she delivers a seamless, world-class experience for clients across borders.',
     phone: "987-654-3210",
   },
 ]
@@ -93,13 +93,13 @@ export function AgentsSection() {
                     </div>
                   </div> */}
 
-                  <div className="flex items-center gap-2 mb-6">
+                  {/* <div className="flex items-center gap-2 mb-6">
                     <Phone className="w-5 h-5" />
                     <span className="font-semibold">{agent.phone}</span>
-                  </div>
+                  </div> */}
                 </div>
 
-                <Button
+                {/* <Button
                   variant="outline"
                   className="w-fit border-accent text-accent hover:bg-accent hover:text-white bg-transparent"
                 >
@@ -107,7 +107,7 @@ export function AgentsSection() {
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}

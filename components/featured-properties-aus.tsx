@@ -5,52 +5,22 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ChevronLeft, ChevronRight, Bed, Bath, Maximize, ChevronUp } from "lucide-react"
 import Image from "next/image"
+import Link from 'next/link';
 
-const properties = [
-  {
-    id: 1,
-    title: "Home in Merrick Way",
-    address: "Merrick Way, Miami, FL 33134, USA",
-    bedrooms: 3,
-    bathrooms: 3,
-    sqft: 4300,
-    price: 540000,
-    image: "/modern-villa-pool.jpg",
-    type: "sale",
-  },
-  {
-    id: 2,
-    title: "Villa in Coral Gables",
-    address: "Deering Bay Drive, Coral Gables, FL 33158, USA",
-    bedrooms: 3,
-    bathrooms: 3.5,
-    sqft: 3500,
-    price: 825000,
-    image: "/victorian-house.jpg",
-    type: "sale",
-  },
-  {
-    id: 3,
-    title: "Villa on Hollywood Boulevard",
-    address: "Hatteras Lane, Hollywood, FL 33019, USA",
-    bedrooms: 3,
-    bathrooms: 4,
-    sqft: 4530,
-    price: 740000,
-    image: "/modern-living-room.jpg",
-    type: "rent",
-  },
-  {
-    id: 4,
-    title: "Villa on Hollywood Boulevard",
-    address: "Hatteras Lane, Hollywood, FL 33019, USA",
-    bedrooms: 3,
-    bathrooms: 4,
-    sqft: 4530,
-    price: 740000,
-    image: "/modern-living-room.jpg",
-    type: "rent",
-  },
+type Property = {
+  id: number;
+  title: string;
+  address: string;
+  bedrooms: string;
+  bathrooms: string;
+  sqft: string;
+  price: string;
+  image: string;
+  type: "rent" | "sale";
+}
+
+const properties: Property[] = [
+
 ]
 
 export function FeaturedPropertiesAus() {
@@ -80,7 +50,7 @@ export function FeaturedPropertiesAus() {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50" id="realestate">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold text-center mb-8">Australia Prestige Listings</h2>
         <p className="text-muted-foreground leading-relaxed mb-10 text-xl text-center">
@@ -121,6 +91,12 @@ export function FeaturedPropertiesAus() {
 
         {/* Properties Slider */}
         <div className="relative">
+          {filteredProperties.length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-2xl text-gray-500">No property</p>
+            </div>
+          ) : (
+            <>
           <div 
             ref={scrollContainerRef}
             className="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide pb-4"
@@ -160,12 +136,15 @@ export function FeaturedPropertiesAus() {
 
                   <div className="flex items-center justify-between">
                     <span className="text-2xl font-bold">${property.price.toLocaleString()}</span>
-                    <Button
+                    <Link href={`/${property.id}`}>
+                        <Button
                       variant="outline"
                       className="text-accent border-accent hover:bg-accent hover:text-white bg-transparent"
                     >
                       View Details
                     </Button>
+                    </Link>
+                
                   </div>
                 </CardContent>
               </Card>
@@ -187,6 +166,8 @@ export function FeaturedPropertiesAus() {
           >
             <ChevronRight className="w-6 h-6" />
           </button>
+            </>
+          )}
         </div>
       </div>
 

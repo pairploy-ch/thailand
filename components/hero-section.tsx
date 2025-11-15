@@ -9,19 +9,19 @@ export function HeroSection() {
 
   const slides = [
     {
-      image: "/bg-tp.jpg",
+      image: "/bg/bg-1.jpg",
       title: "Thailand Prestige",
       subtitle: "Premium Real Estate in Thailand and Australia",
       description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"
     },
     {
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80",
+      image: "/bg/bg-2.png",
      title: "Thailand Prestige",
       subtitle: "Premium Real Estate in Thailand and Australia",
       description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"
     },
     {
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80",
+      image: "/bg/bg-3.jpeg",
       title: "Thailand Prestige",
       subtitle: "Premium Real Estate in Thailand and Australia",
       description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"

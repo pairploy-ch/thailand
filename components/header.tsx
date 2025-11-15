@@ -76,10 +76,10 @@ export function Header() {
                 Blog
               </a>
               <a
-                href="#contact"
+                href="mailto:Thailandprestige6@gmail.com"
                 className="text-sm font-medium hover:text-accent transition-colors"
               >
-                Contact
+                Contact 
               </a>
             </nav>
 

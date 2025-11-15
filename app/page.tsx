@@ -17,7 +17,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <FeaturedPropertiesSection />
-      {/* <FeaturedPropertiesAus /> */}
+      <FeaturedPropertiesAus />
       <ServicesSection />
       <AgentsSection />
       <TrendingBlogSection />

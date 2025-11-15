@@ -7,18 +7,19 @@ import { ChevronLeft, ChevronRight, Bed, Bath, Maximize, ChevronUp } from "lucid
 import Image from "next/image"
 import Link from 'next/link';
 
-const properties = [
-  {
-    id: 1,
-    title: "𝙏𝙃𝘼𝙈𝘽𝙀𝙍 𝘽𝙮 𝙎𝙥𝙖𝙘𝙚𝙋𝙚𝙧𝙛𝙚𝙘𝙩",
-    address: "Huay Yai pattaya ",
-    bedrooms: '4-5',
-    bathrooms: '4-5',
-    sqft: '4367–425',
-    price: '17,500,000',
-    image: "/assests/as_4.jpg",
-    type: "sale",
-  },
+type Property = {
+  id: number;
+  title: string;
+  address: string;
+  bedrooms: string;
+  bathrooms: string;
+  sqft: string;
+  price: string;
+  image: string;
+  type: "rent" | "sale";
+}
+
+const properties: Property[] = [
 
 ]
 
@@ -90,6 +91,12 @@ export function FeaturedPropertiesSection() {
 
         {/* Properties Slider */}
         <div className="relative">
+          {filteredProperties.length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-2xl text-gray-500">No property</p>
+            </div>
+          ) : (
+            <>
           <div 
             ref={scrollContainerRef}
             className="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide pb-4"
@@ -159,6 +166,8 @@ export function FeaturedPropertiesSection() {
           >
             <ChevronRight className="w-6 h-6" />
           </button>
+            </>
+          )}
         </div>
       </div>
 
