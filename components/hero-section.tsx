@@ -11,19 +11,37 @@ export function HeroSection() {
     {
       image: "/bg/bg-1.jpg",
       title: "Thailand Prestige",
-      subtitle: "Premium Real Estate in Thailand and Australia",
+      subtitle: "Premium Real Estate in Thailand",
       description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"
     },
     {
-      image: "/bg/bg-2.png",
+      image: "/bg/bg-2.jpg",
      title: "Thailand Prestige",
-      subtitle: "Premium Real Estate in Thailand and Australia",
+      subtitle: "Premium Real Estate in Thailand",
       description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"
     },
     {
       image: "/bg/bg-3.jpeg",
       title: "Thailand Prestige",
-      subtitle: "Premium Real Estate in Thailand and Australia",
+      subtitle: "Premium Real Estate in Thailand",
+      description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"
+    },
+        {
+      image: "/bg/bg-4.jpg",
+      title: "Thailand Prestige",
+      subtitle: "Premium Real Estate in Thailand",
+      description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"
+    },
+    {
+      image: "/bg/bg-5.jpg",
+     title: "Thailand Prestige",
+      subtitle: "Premium Real Estate in Thailand",
+      description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"
+    },
+    {
+      image: "/bg/bg-6.jpg",
+      title: "Thailand Prestige",
+      subtitle: "Premium Real Estate in Thailand",
       description: "Private Sales • Luxury Homes & Condominiums • Investment Opportunities"
     }
   ]

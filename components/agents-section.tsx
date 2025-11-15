@@ -53,8 +53,8 @@ export function AgentsSection() {
         <div className="grid md:grid-cols-2 gap-8">
           {agents.map((agent) => (
             <div key={agent.name} className="bg-card rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
-              <div className="relative md:w-2/5 h-64 md:h-auto">
-                <Image src={agent.image || "/placeholder.svg"} alt={agent.name} fill className="object-cover" />
+              <div className="relative md:w-2/5 h-96 md:h-auto">
+                <Image src={agent.image || "/placeholder.svg"} alt={agent.name} fill className="object-cover"  style={{ objectPosition: 'center top' }} />
              
        
               </div>
