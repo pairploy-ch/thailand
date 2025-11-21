@@ -87,7 +87,7 @@ export default function TrendingBlogSection() {
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {blogs && blogs.length > 0 ? (
-                  blogs.slice(0, 6).map((blog) => (
+                  blogs.slice(0, 100).map((blog) => (
                     <Link
                       key={blog.id}
                       href={`/blogs/${blog.id}`}
@@ -127,7 +127,7 @@ export default function TrendingBlogSection() {
               </div>
 
               {/* View All Button */}
-              {blogs && blogs.length > 6 && (
+              {/* {blogs && blogs.length > 6 && (
                 <div className="text-center mt-12">
                   <Link
                     href="/blogs"
@@ -136,7 +136,7 @@ export default function TrendingBlogSection() {
                     View All Articles
                   </Link>
                 </div>
-              )}
+              )} */}
             </>
           )}
         </div>
