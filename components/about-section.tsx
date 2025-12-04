@@ -8,32 +8,29 @@ export function AboutSection() {
           {/* Left content */}
           <div>
             <h2 className="text-4xl lg:text-5xl mb-6 text-balance leading-tight">
-              Discover Thailand’s Most Exclusive Real Estate with
-              ThailandPrestige.
+              Welcome to Thailand Prestige, a premium, executive-level real
+              estate service dedicated to clients who value privacy, precision,
+              and personalised attention.
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6 text-xl">
-              At ThailandPrestige, we connect international buyers with top-tier
-              properties across Thailand—starting from 5 million THB and
-              carefully curated for quality, value, and long-term growth.
+              As your Executive Private Real Estate Agent, our commitment is
+              simple: to represent your interests with absolute discretion,
+              refined professionalism, and deep market expertise.
             </p>{" "}
             <br />
             <p>
-              From luxury condos in Bangkok, high-return investment units in
-              Pattaya, and beachfront villas in Phuket, to premium homes in
-              Chiang Mai and Khon Kaen—we source only the best.
+              Whether you are searching for a luxury residence, evaluating an
+              investment property, or exploring Thailand’s emerging
+              opportunities, Thailand Prestige delivers a seamless, high-touch
+              experience from consultation to handover.
             </p>
             <br />
+            Here, every client is treated as a long-term partner. Every
+            transaction is managed with care. And every property is selected
+            with purpose.
             <br />
-            We offer: <br />
-            • Private sales access <br />
-            • One-on-one investment consultations <br />
-            • Full end-to-end services for foreign buyers <br />
-            • Trusted, transparent guidance throughout the entire purchase
-            process <br />
-            <br />
-            ThailandPrestige, managed by SPW Prestige Co., Ltd., is your
-            dedicated partner for secure, seamless, and profitable property
-            investment in Thailand.
+            Thailand Prestige — Luxury guidance, trusted expertise, and a truly
+            personalised real estate journey.
           </div>
 
           {/* Right image grid */}
