@@ -8,9 +8,7 @@ export function AboutSection() {
           {/* Left content */}
           <div>
             <h2 className="text-4xl lg:text-5xl mb-6 text-balance leading-tight">
-              Welcome to Thailand Prestige, a premium, executive-level real
-              estate service dedicated to clients who value privacy, precision,
-              and personalised attention.
+              Welcome to Thailand Prestige — a business under SPW Associates Pty Ltd, supporting the next wave of opportunity, a premium, executive-level real estate service dedicated to clients who value privacy, precision, and personalised attention. 
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6 text-xl">
               As your Executive Private Real Estate Agent, our commitment is
