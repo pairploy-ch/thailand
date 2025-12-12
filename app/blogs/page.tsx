@@ -21,12 +21,12 @@ interface Blog {
 // ฟังก์ชันสำหรับแปลงวันที่
 const formatDate = (dateString: string) => {
   const date = new Date(dateString);
-  return date.toLocaleDateString("th-TH", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
   });
-};
+}
 
 // ฟังก์ชันสำหรับสร้าง excerpt จาก Content
 const getExcerpt = (content: string, maxLength: number = 150) => {

@@ -28,19 +28,19 @@ interface Blog {
 export default function Home() {
   const [blogs, setBlogs] = useState<Blog[]>([]);
 
-  async function fetchCourses() {
-    const { data: Blogs, error } = await supabase
-      .from("Blogs")
-      .select("*");
+ async function fetchCourses() {
+  const { data: Blogs, error } = await supabase
+    .from("Blogs")
+    .select("*")
+    .order("created_at", { ascending: false }); // ← เรียงจากใหม่ → เก่า
 
-    // จัดการข้อผิดพลาดและ State
-    if (error) {
-      console.error("Error fetching blogs:", error);
-      return;
-    }
-
-    setBlogs(Blogs || []);
+  if (error) {
+    console.error("Error fetching blogs:", error);
+    return;
   }
+
+  setBlogs(Blogs || []);
+}
 
   useEffect(() => {
     fetchCourses();
